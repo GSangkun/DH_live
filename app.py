@@ -82,7 +82,7 @@ def launch_server():
 def create_interface():
     with gr.Blocks(css=css) as demo:
         # 标题
-        gr.Markdown("# 视频处理与生成工具")
+        gr.Markdown("# NeoVox — 轻量化数字人 AI 语伴系统")
 
         # 第一部分：上传静默视频和说话视频
         gr.Markdown("## 第一部分：视频处理")
