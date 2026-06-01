@@ -1,0 +1,31 @@
+.env
+.DS_Store
+**/__pycache__
+
+# 编译产物与冗余副本
+web_demo/static/DHLiveMini.wat
+web_demo/static/DHLiveMini.wasm_copy
+web_demo/static/js/dialog-bak.js
+
+# 用户生成的演示数据（运行后产生，不属于源码）
+web_demo/static/assets/
+web_demo/static/assets2/
+web_demo/static/assets3/
+
+# 模型权重
+/checkpoint/
+.idea/
+/checkpoint/
+/mini_live/pt/
+/web_demo_authorized/
+/utils/
+# 忽略 video_data 文件夹下的所有内容
+video_data/*
+!video_data/000001/
+!video_data/000002/
+!video_data/teeth_ref/
+video_data/teeth_ref/*_2.png
+!video_data/test/
+!video_data/audio1.wav
+
+/web_demo/static/ios_test.html
