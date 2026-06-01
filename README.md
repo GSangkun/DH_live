@@ -43,7 +43,12 @@ pip install azure-cognitiveservices-speech
 
 前往 [Azure 控制台](https://portal.azure.com/) 创建「语音服务」资源，获取 Key 和区域。
 
-**3. 配置环境变量**
+**3. 申请 API Key**
+
+- **智谱 AI（GLM-4）**：前往 [open.bigmodel.cn](https://open.bigmodel.cn/) 注册，进入「API Keys」页面创建 Key
+- **Azure TTS**：前往 [portal.azure.com](https://portal.azure.com/) 创建「语音服务」资源，在「Keys and Endpoint」中获取 Key 和区域
+
+**4. 配置环境变量**
 
 复制 `.env.example` 为 `.env`，填入你的 API Key：
 
@@ -53,7 +58,7 @@ AZURE_SPEECH_KEY=你的Azure语音Key
 AZURE_SPEECH_REGION=southeastasia
 ```
 
-**4. 启动**
+**5. 启动**
 ```bash
 python app.py
 ```
