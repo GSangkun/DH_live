@@ -35,14 +35,25 @@
 pip install -r requirements.txt
 ```
 
-**2. 配置环境变量**
+**2. 安装 Azure Speech SDK**
+
+```bash
+pip install azure-cognitiveservices-speech
+```
+
+前往 [Azure 控制台](https://portal.azure.com/) 创建「语音服务」资源，获取 Key 和区域。
+
+**3. 配置环境变量**
 
 复制 `.env.example` 为 `.env`，填入你的 API Key：
-ZHIPUAI_API_KEY=你的key
-AZURE_SPEECH_KEY=你的key
-AZURE_SPEECH_REGION=southeastasia
 
-**3. 启动**
+```
+ZHIPUAI_API_KEY=你的智谱AI Key
+AZURE_SPEECH_KEY=你的Azure语音Key
+AZURE_SPEECH_REGION=southeastasia
+```
+
+**4. 启动**
 ```bash
 python app.py
 ```
